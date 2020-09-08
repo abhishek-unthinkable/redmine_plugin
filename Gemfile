@@ -18,7 +18,7 @@ gem 'i18n', '~> 1.8.2'
 gem "rbpdf", "~> 1.20.0"
 gem 'addressable'
 gem 'rubyzip', (RUBY_VERSION < '2.4' ? '~> 1.3.0' : '~> 2.3.0')
- gem "pg", "~> 1.2.2", :platforms => [:mri, :mingw, :x64_mingw]
+gem "pg", "~> 1.2.2", :platforms => [:mri, :mingw, :x64_mingw]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]

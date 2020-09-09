@@ -1,1 +1,1 @@
-docker-compose up -d && docker attach redmine_server_1
+docker-compose up -d && docker attach redmine_plugin_server_1

@@ -17,15 +17,15 @@ Steps:
 
 
 About the polls plugin:
-Run the server "bin/dev-server"
-Go to localhost:3000
-Go to "sign in" option
-Enter default username and password (username: admin, password: admin)
-Set a new password
-Go to "Projects"
-Create a new project by clicking on "New Project"
-Enter the project name
-Below under the "Modules" tab, check the Polls option to make it available to your project
-After creation of the project
-Again go to "Projects" and click on your project name
-A tab named "Polls" will appear, click on it and here you will see all your created polls.
+1. Run the server "bin/dev-server"
+2. Go to localhost:3000
+3. Go to "sign in" option
+4. Enter default username and password (username: admin, password: admin)
+5. Set a new password
+6. Go to "Projects"
+7. Create a new project by clicking on "New Project"
+8. Enter the project name
+9. Below under the "Modules" tab, check the Polls option to make it available to your project
+10. After creation of the project
+11. Again go to "Projects" and click on your project name
+12. A tab named "Polls" will appear, click on it and here you will see all your created polls.

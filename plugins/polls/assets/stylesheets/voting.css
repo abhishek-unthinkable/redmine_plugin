@@ -1,3 +1,19 @@
 a.vote { font-size: 120%; }
-a.vote.yes { color: green; }
-a.vote.no  { color: red; }
+a.vote.yes { background-color: green; }
+a.vote.no  { background-color: red; }
+
+a.vote.yes, a.vote.no {
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.polls-div {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.polls-ques {
+    margin-bottom: 10px;
+}

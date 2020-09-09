@@ -1,13 +1,16 @@
 <% html_title "Polls" %>
 
-<h2>Polls</h2>
+<h1>Polls</h1>
 
 <% @polls.each do |poll| %>
-  <p>
-    <%= poll.question %>?
-    <%= link_to 'Yes', {action: 'vote', id: poll[:id], answer: 'yes' }, method: :post, class: 'vote yes' %> (<%= poll.yes %>)
-    <%= link_to 'No', {action: 'vote', id: poll[:id], answer: 'no' }, method: :post, class: 'vote no' %> (<%= poll.no %>)
-  </p>
+  <div class="polls-div">
+    <div class="polls-ques"><%= poll.question %>?</div>
+    <div>
+    <%= link_to 'Yes', {action: 'vote', id: poll[:id], answer: 'yes', project_id: params[:project_id] }, method: :post, class: 'vote yes' %> (<%= poll.yes %>)
+    <%= link_to 'No', {action: 'vote', id: poll[:id], answer: 'no', project_id: params[:project_id] }, method: :post, class: 'vote no' %> (<%= poll.no %>)
+    </div>
+  </div>
+  <br>
 <% end %>
 
 <% content_for :header_tags do %>

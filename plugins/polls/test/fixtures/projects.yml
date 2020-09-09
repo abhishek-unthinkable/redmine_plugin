@@ -1,0 +1,5 @@
+project:
+    id: 10
+    name: 'fixture_project'
+    description: 'desc of fixture'
+    is_public: true

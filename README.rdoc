@@ -10,24 +10,22 @@ Steps:
 1. Clone repo
 2. Prequisite: Install Docker and docker compose
 3. bin/dev-server
-4. docker-compose run --rm server rake db:create
-5. docker-compose run --rm server rake db:migrate
-6. docker-compose run --rm server rake db:seed
+4. docker-compose run --rm server bundle exec rake db:create
+5. docker-compose run --rm server bundle exec rake db:migrate
+6. docker-compose run --rm server bundle exec redmine:plugins:migrate
+7. docker-compose run --rm server bundle exec rake db:seed
 
 
 About the polls plugin:
-1. docker-compose run --rm server bundle exec rails c
-2. Create some polls now like below
-    Poll.create(question: "Can you see this poll")
-3. Run the server "bin/dev-server"
-4. Go to localhost:3000
-5. Go to "sign in" option
-6. Enter default username and password (username: admin, password: admin)
-7. Set a new password
-8. Go to "Projects"
-9. Create a new project by clicking on "New Project"
-10. Enter the project name
-11. Below under the "Modules" tab, check the Polls option to make it available to your project
-12. After creation of the project
-13. Again go to "Projects" and click on your project name
-14. A tab named "Polls" will appear, click on it and here you will see all your created polls.
+Run the server "bin/dev-server"
+Go to localhost:3000
+Go to "sign in" option
+Enter default username and password (username: admin, password: admin)
+Set a new password
+Go to "Projects"
+Create a new project by clicking on "New Project"
+Enter the project name
+Below under the "Modules" tab, check the Polls option to make it available to your project
+After creation of the project
+Again go to "Projects" and click on your project name
+A tab named "Polls" will appear, click on it and here you will see all your created polls.

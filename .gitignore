@@ -20,7 +20,6 @@
 /lib/redmine/scm/adapters/mercurial/redminehelper.pyo
 /log/*.log*
 /log/mongrel_debug
-/plugins/*
 !/plugins/README
 /public/dispatch.*
 /public/plugin_assets/*
@@ -39,8 +38,9 @@
 *.rbc
 
 /.bundle
-/Gemfile.lock
 /Gemfile.local
 
 /node_modules
 yarn-error.log
+
+/~/.vscode-root

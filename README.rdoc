@@ -19,7 +19,7 @@ About the polls plugin:
 1. docker-compose run --rm server bundle exec rails c
 2. Create some polls now like below
     Poll.create(question: "Can you see this poll")
-3. Run the server "bin.dev-server"
+3. Run the server "bin/dev-server"
 4. Go to localhost:3000
 5. Go to "sign in" option
 6. Enter default username and password (username: admin, password: admin)
